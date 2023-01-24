@@ -1,0 +1,31 @@
+.slide-left-align {
+    width: 40%;
+    position: relative;
+    top: -80px;
+    left: -40px;
+}
+
+.slide-right-align {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+}
+
+@media screen and (max-width: 990px) {
+    .slide-left-align {
+        width: 100%;
+        top: 0;
+        max-height: 420px;
+        overflow: hidden;
+    }
+    .slide-right-align {
+        width: 100%;
+        right: 0;
+        bottom: 30px;
+    }
+    .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+}

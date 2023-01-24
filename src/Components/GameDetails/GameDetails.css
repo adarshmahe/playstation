@@ -1,0 +1,32 @@
+.hero-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 400px;
+    background-position: center center;
+    background-color: blueviolet;
+}
+
+.game-details {
+    background: rgba(31, 32, 36, .97);
+    position: relative;
+    top: -10rem;
+}
+
+.game-compactability {
+    list-style: none;
+}
+
+.game-compactability li {
+    margin-bottom: 1rem;
+}
+
+.game-info-box {
+    background: rgba(31, 32, 36, .97);
+}
+
+@media screen and (max-width: 990px) {
+    .game-details {
+        top: 0;
+    }
+}

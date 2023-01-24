@@ -1,0 +1,13 @@
+.sony-logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75px;
+    display: inline-block;
+    height: 35px;
+}
+
+@media screen and (max-width: 990px) {
+    .sony-header {
+        display: none !important;
+    }
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "ID": 1,
+        "Title": "PlayStation 5 Console",
+        "Description": "Experience an all-new generation of incredible PlayStation games.",
+        "ButtonText": "Learn more",
+        "Image": "https://gmedia.playstation.com/is/image/SIEPDC/playstation-5-horizontal-product-shot-01-ps5-en-23nov20?$2400px--t$"
+    },
+    {
+        "ID": 2,
+        "Title": "DualSense™ Wireless Controller",
+        "Description": "Immerse yourself in the gaming experience with a controller the supports responsive haptic feedback and dynamic trigger effects.",
+        "ButtonText": "Learn more",
+        "Image": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-collection-image-block-01-en-01sep22?$2400px$"
+    },
+    {
+        "ID": 3,
+        "Title": "PULSE 3D™ Wireless Headset",
+        "Description": "Enjoy a seamless wireless experience with a headset fine-tuned for 3D Audio on PS5 consoles.",
+        "ButtonText": "Learn more",
+        "Image": "https://gmedia.playstation.com/is/image/SIEPDC/3d-pulse-headset-range-image-block-03-en-13sep22?$2400px$"
+    },
+    {
+        "ID": 4,
+        "Title": "DualSense Edge™ Wireless Controller",
+        "Description": "Get an edge in gameplay with remappable buttons, tuneable triggers and sticks, changeable stick caps, back buttons, and more.",
+        "ButtonText": "Find out more",
+        "Image": "https://gmedia.playstation.com/is/image/SIEPDC/DualSense-Edge-image-block-01-en-24aug22?$2400px$"
+    },
+    {
+        "ID": 5,
+        "Title": "Media Remote",
+        "Description": "Conveniently control movies, streaming services and more on your PS5 console with an intuitive layout.",
+        "ButtonText": "Learn more",
+        "Image": "https://gmedia.playstation.com/is/image/SIEPDC/Media-Remote-square-image-block-ps5-01-en-09oct20?$2400px--t$"
+    },
+    {
+        "ID": 6,
+        "Title": "HD Camera",
+        "Description": "Add yourself to your gameplay videos and broadcasts with smooth, sharp, full-HD capture.",
+        "ButtonText": "Learn more",
+        "Image": "https://gmedia.playstation.com/is/image/SIEPDC/hd-camera-square-image-block-ps5-01-en-07dec20?$2400px$"
+    }
+]

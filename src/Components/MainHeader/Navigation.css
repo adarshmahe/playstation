@@ -1,0 +1,80 @@
+.header-nav {
+    box-shadow: 0 12px 24px 0 rgb(0 0 0 / 12%);
+    background: #fff;
+    padding: 0 1rem;
+}
+
+.shared-nav-search {
+    background: 0;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.shared-nav-search svg {
+    height: 23px;
+    width: 23px;
+}
+
+.user-nav img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.user-nav-details img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    background: #0d6efd;
+}
+
+.cart-btn .badge {
+    top: -15px;
+}
+
+.nav-search-form {
+    width: 400px;
+}
+
+.nav-search-form ul li {
+    cursor: pointer;
+}
+
+.nav-search-form ul li:hover {
+    color: #0d6efd;
+}
+
+@media screen and (max-width: 990px) {
+    .shared-nav {
+        width: 50%;
+        flex-wrap: nowrap;
+    }
+
+    .ps-logo {
+        order: 2;
+    }
+
+    .header-nav ul.nav {
+        position: absolute;
+        left: 0;
+        display: block;
+        padding: 0 1rem;
+        top: 65px;
+        background: #fff;
+        z-index: 999;
+    }
+
+    .header-nav ul.nav li {
+        text-align: left;
+    }
+
+    .collapse:not(.show) {
+        display: none !important;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}

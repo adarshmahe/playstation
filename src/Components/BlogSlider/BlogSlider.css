@@ -1,0 +1,44 @@
+.blogs-wrapper {
+    box-shadow: 0 2px 10px #ececec;
+    border-radius: 15px;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+    align-content: flex-start;
+}
+
+.blogs-wrapper p {
+    font-weight: 300;
+}
+
+.blogs-wrapper img {
+    width: 100%;
+    box-shadow: 0px 2px 10px #5c5c5c;
+    border-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blogs-wrapper h3 {
+    font-size: 18px;
+    margin: 1rem 0;
+}
+
+.blog-item {
+    display: flex;
+    min-height: 100%;
+    margin: 1rem;
+}
+
+.react-multi-carousel-dot button {
+    border: none;
+    width: 20px;
+    height: 2px;
+    border-radius: 0;
+}
+
+.react-multi-carousel-dot--active button {
+    background: #0070d8;
+}

@@ -1,0 +1,13 @@
+.cart-item-list li {
+    display: flex;
+}
+
+.cart-item-list li img {
+    transition: opacity 0.12s ease-in 0s;
+    min-width: 64px;
+    max-width: 90px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    margin-right: 2rem;
+}

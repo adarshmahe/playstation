@@ -1,0 +1,22 @@
+.custom-button-group {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    display: flex;
+}
+.custom-button-group button {
+    background: none;
+    color: white;
+    font-size: 34px;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    border: 1px solid black;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.custom-button-group button:hover {
+    border: 1px solid white;
+}
