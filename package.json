@@ -1,5 +1,5 @@
 {
-  "homepage": "http://adarshmahe.github.io/playstation",
+  "homepage": "https://adarshmahe.github.io/playstation",
   "name": "ps-app",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +17,7 @@
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.2",
     "react-router-dom": "^6.6.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -50,7 +50,7 @@
     "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
-    "@expo/webpack-config": "^0.17.3",
+    "@expo/webpack-config": "^0.12.44",
     "babel-loader": "^9.1.0",
     "babel-plugin-react-html-attrs": "^3.0.5",
     "css-loader": "^6.7.3",
