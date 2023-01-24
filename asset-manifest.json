@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/playstation/static/css/main.75398877.css",
+    "main.js": "/playstation/static/js/main.7e727834.js",
+    "static/js/651.45e58848.chunk.js": "/playstation/static/js/651.45e58848.chunk.js",
+    "static/media/slider02.jpg": "/playstation/static/media/slider02.c7880f91a99d2816a435.jpg",
+    "static/media/slider01.jpg": "/playstation/static/media/slider01.09b4c1eb74f872532586.jpg",
+    "static/media/slider03.jpg": "/playstation/static/media/slider03.a107d9651edf54026370.jpg",
+    "static/media/ps-plus-dec-monthly-games.jpg": "/playstation/static/media/ps-plus-dec-monthly-games.55cc47df9ce6aac107b7.jpg",
+    "static/media/bootstrap-icons.woff?": "/playstation/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/playstation/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
+    "static/media/ps-plus-black-badge.png": "/playstation/static/media/ps-plus-black-badge.2f27a3fa6b21a3e46abc.png",
+    "static/media/ps-old-logo.svg": "/playstation/static/media/ps-old-logo.62cfc503dda5de155edb0acedb1632c7.svg",
+    "static/media/revicons.eot": "/playstation/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/playstation/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/playstation/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/playstation/index.html",
+    "main.75398877.css.map": "/playstation/static/css/main.75398877.css.map",
+    "main.7e727834.js.map": "/playstation/static/js/main.7e727834.js.map",
+    "651.45e58848.chunk.js.map": "/playstation/static/js/651.45e58848.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75398877.css",
+    "static/js/main.7e727834.js"
+  ]
+}
