@@ -20,7 +20,7 @@ const Navigation = ({ cartItems, gameItems }) => {
 
   return (
     <>
-      <nav className='d-flex justify-content-between py-2 header-nav sticky-top'>
+      <nav className='d-flex justify-content-between header-nav sticky-top'>
         <div className='d-flex shared-nav align-items-center navbar navbar-expand-lg '>
           <div className='ps-logo'>
             <Link
