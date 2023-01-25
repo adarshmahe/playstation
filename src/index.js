@@ -9,11 +9,12 @@ import reportWebVitals from "./reportWebVitals";
 import { Auth0Provider } from "@auth0/auth0-react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const authURL = "https://adarshmahe.github.io";
 root.render(
   <Auth0Provider
     domain='dev-kzrq21p3eg0gzia1.us.auth0.com'
     clientId='SG9SamEysU2ljCa6DgnzGLzaeqUOT4T8'
-    redirectUri={window.location.origin}
+    redirectUri={authURL}
   >
     <React.StrictMode>
       <App />
