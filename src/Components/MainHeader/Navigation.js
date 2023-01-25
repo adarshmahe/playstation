@@ -25,7 +25,7 @@ const Navigation = ({ cartItems, gameItems }) => {
           <div className='ps-logo'>
             <Link
               className='shared-nav-ps-logo-link'
-              to='/'
+              to='/playstation'
               aria-label='PlayStation.com'
             >
               <svg
