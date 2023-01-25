@@ -9,7 +9,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Auth0Provider } from "@auth0/auth0-react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const authURL = "https://adarshmahe.github.io";
+const authURL = "https://adarshmahe.github.io/playstation/";
 root.render(
   <Auth0Provider
     domain='dev-kzrq21p3eg0gzia1.us.auth0.com'
