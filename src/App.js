@@ -7,13 +7,21 @@ import Error from "./Pages/Error";
 import Shop from "./Pages/Shop";
 import Home from "./Pages/Home";
 import GameDetail from "./Pages/GameDetail";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cart from "./Components/Cart/Cart";
 import gameData from "./Assets/Data/game.json";
 
+const cartFromLocalStorage = JSON.parse(
+  localStorage.getItem("cartItems") || "[]"
+);
+
 function App() {
   const gameItems = gameData;
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState(cartFromLocalStorage);
+
+  useEffect(() => {
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }, [cartItems]);
 
   const handleAddGame = (game) => {
     const gameExist = cartItems.find((item) => item.ID === game.ID);
@@ -47,7 +55,11 @@ function App() {
         {
           path: "shop/:gameId",
           element: (
-            <GameDetail cartItems={cartItems} handleAddGame={handleAddGame} gameItems={gameItems} />
+            <GameDetail
+              cartItems={cartItems}
+              handleAddGame={handleAddGame}
+              gameItems={gameItems}
+            />
           ),
         },
         {
