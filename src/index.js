@@ -7,6 +7,23 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Auth0Provider } from "@auth0/auth0-react";
+import { configureStore } from "@reduxjs/toolkit";
+import { Provider } from "react-redux";
+import ProductsReducer, { productsFetch } from "./Features/ProductSlice";
+import { productsApi } from "./Features/ProductsAPI";
+import CartReducer from "./Features/CartSlice";
+
+const store = configureStore({
+  reducer: {
+    products: ProductsReducer,
+    cart: CartReducer,
+    [productsApi.reducerPath]: productsApi.reducer,
+  },
+  middleware: (getDefaultMiddleware) => 
+    getDefaultMiddleware().concat(productsApi.middleware),
+});
+
+store.dispatch(productsFetch());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const authURL = "https://adarshmahe.github.io/playstation/";
@@ -18,7 +35,9 @@ root.render(
     // redirectUri={window.location.origin}
   >
     <React.StrictMode>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </React.StrictMode>
   </Auth0Provider>
 );

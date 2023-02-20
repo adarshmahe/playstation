@@ -1,5 +1,7 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { removeFromCart, clearCart } from "../../Features/CartSlice";
 import "./Cart.css";
 
 export default function Cart({ cartItems }) {
@@ -12,6 +14,17 @@ export default function Cart({ cartItems }) {
     (acc, item) => acc + item.Price * item.quantity,
     0
   );
+
+  const dispatch = useDispatch();
+
+  const handleRemoveFromCart = (product) => {
+    dispatch(removeFromCart(product));
+  };
+
+  const handleClearCart = () => {
+    dispatch(clearCart());
+    window.location.reload();
+  };
 
   return (
     <div className='cart-items'>
@@ -43,12 +56,25 @@ export default function Cart({ cartItems }) {
           <div className='col'>
             <ul className='list-group list-group-flush cart-item-list'>
               {cartItems.map((item) => (
-                <li className='list-group-item py-3' key={item.ID}>
-                  <img src={item.image} alt={item.Title} />
-                  <div className='text-start'>
-                    <p className='mb-1 fs-5 fw-semibold'>{item.Title}</p>
-                    <p className='mb-1'>Status: {item.Status}</p>
-                    <p>₹ {item.Price ? item.Price : "2000"}</p>
+                <li
+                  className='list-group-item py-3 align-items-center'
+                  key={item.ID}
+                >
+                  <div className='d-flex'>
+                    <img src={item.image} alt={item.Title} />
+                    <div className='text-start'>
+                      <p className='mb-1 fs-5 fw-semibold'>{item.Title}</p>
+                      <p className='mb-1'>Status: {item.Status}</p>
+                      <p>₹ {item.Price ? item.Price : "2000"}</p>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      className='btn btn-outline-danger'
+                      onClick={() => handleRemoveFromCart(item)}
+                    >
+                      <i class='bi bi-trash3'></i>
+                    </button>
                   </div>
                 </li>
               ))}
@@ -57,9 +83,22 @@ export default function Cart({ cartItems }) {
         </div>
 
         <div className='row'>
+          <div className='col'>
+            <div className='d-flex justify-content-between py-3 border-top'>
+              <Link to='/shop' className='btn btn-primary'>
+                Continue Shopping
+              </Link>
+              <button className='btn btn-danger' onClick={() => handleClearCart()}>
+                Clear Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className='row'>
           {cartItems.length !== 0 && (
             <div className='col'>
-              <div className='cart-total-wrapper text-start border-top mb-5 p-3'>
+              <div className='cart-total-wrapper text-start mb-5 p-3'>
                 {/* <div className='d-flex justify-content-between'>
                   <p>Subtotal </p>
                   <p>₹ {cartPriceTotal}</p>

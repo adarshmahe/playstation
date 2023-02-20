@@ -169,6 +169,15 @@ const Navigation = ({ cartItems, gameItems }) => {
             )}
           </div>
 
+          {/* <div className='cart-btn'>
+                  <Link to='/cart' type='button' className='btn btn-demo'>
+                    <i className='bi bi-cart4 fs-4'></i>
+                    <span className='badge bg-primary rounded-pill ms-1'>
+                      {cartItems.length}
+                    </span>
+                  </Link>
+                </div> */}
+
           <div className='header-search dropdown'>
             <button
               className='shared-nav-icon shared-nav-search'

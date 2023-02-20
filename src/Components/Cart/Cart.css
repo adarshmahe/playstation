@@ -1,13 +1,16 @@
 .cart-item-list li {
     display: flex;
+    justify-content: space-between;
 }
 
 .cart-item-list li img {
     transition: opacity 0.12s ease-in 0s;
-    min-width: 64px;
-    max-width: 90px;
+    min-width: 200px;
+    max-width: 200px;
     width: 100%;
     height: 100%;
     border-radius: 4px;
     margin-right: 2rem;
+    color: white;
+    background-image: linear-gradient(to right top, #6d1045, #691853, #612061, #55296e, #43327a, #37428a, #265197, #005fa2, #0077b1, #008eb6, #00a4b4, #0cb8ad);
 }

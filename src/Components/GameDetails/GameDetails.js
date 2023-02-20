@@ -1,16 +1,38 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import "./GameDetails.css";
+import { addToCart } from "../../Features/CartSlice";
+import { useNavigate } from "react-router-dom";
+import { useGetAllProductsQuery } from "../../Features/ProductsAPI";
 
-export default function GameDetails({ gameItems, handleAddGame }) {
-  const { gameId } = useParams();
-  const currentProduct = gameItems.find((item) => item.ID == gameId);
+export default function GameDetails() {
+  
+  const { data, isLoading } = useGetAllProductsQuery();
+  
   const [addtoCart, setAddToCart] = useState("Add to Cart");
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  const navigate = useNavigate();
 
+  const dispatch = useDispatch();
+  let currentProduct;
+  let para = useParams();
+  if (isLoading) {
+    console.log("flaggin..");
+  } else {
+    const { gameId } = para;
+    currentProduct = data.find((item) => item.ID == gameId);
+  }
+
+  const handleAddToCart = () => {
+    dispatch(addToCart(currentProduct));
+    navigate('/cart', {replace: true});
+    navigate(0);
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div style={{ background: "black" }}>
@@ -27,11 +49,14 @@ export default function GameDetails({ gameItems, handleAddGame }) {
             <div className='game-details text-start text-white p-4'>
               <h3>{currentProduct.Title}</h3>
               <h5 className='fw-light mb-5'>Status: {currentProduct.Status}</h5>
-              <h4>₹ {currentProduct.Price ? currentProduct.Price : '2000'}</h4>
+              <h4>₹ {currentProduct.Price ? currentProduct.Price : "2000"}</h4>
               <div className='d-flex'>
                 <button
                   className='btn btn-warning me-3 w-100'
-                  onClick={() => {handleAddGame(currentProduct); setAddToCart("In Cart")}}
+                  onClick={() => {
+                    handleAddToCart(currentProduct);
+                    setAddToCart("In Cart");
+                  }}
                 >
                   {addtoCart}
                 </button>

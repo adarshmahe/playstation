@@ -1,4 +1,5 @@
 import "./App.css";
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from "./Components/Footer/Footer";
 import MainHeader from "./Components/MainHeader/MainHeader";
 import SonyHeader from "./Components/SonyHeader/SonyHeader";
@@ -10,6 +11,7 @@ import GameDetail from "./Pages/GameDetail";
 import { useEffect, useState } from "react";
 import Cart from "./Components/Cart/Cart";
 import gameData from "./Assets/Data/game.json";
+import { ToastContainer } from "react-toastify";
 
 const cartFromLocalStorage = JSON.parse(
   localStorage.getItem("cartItems") || "[]"
@@ -72,6 +74,7 @@ function App() {
 
   return (
     <div className='App'>
+      <ToastContainer />
       <SonyHeader />
 
       <RouterProvider router={router} />
