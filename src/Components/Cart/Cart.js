@@ -19,6 +19,7 @@ export default function Cart({ cartItems }) {
 
   const handleRemoveFromCart = (product) => {
     dispatch(removeFromCart(product));
+    window.location.reload();
   };
 
   const handleClearCart = () => {
