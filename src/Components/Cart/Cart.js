@@ -100,14 +100,6 @@ export default function Cart({ cartItems }) {
           {cartItems.length !== 0 && (
             <div className='col'>
               <div className='cart-total-wrapper text-start mb-5 p-3'>
-                {/* <div className='d-flex justify-content-between'>
-                  <p>Subtotal </p>
-                  <p>₹ {cartPriceTotal}</p>
-                </div> */}
-                {/* <div className='d-flex justify-content-between'>
-                  <p>Discount</p>
-                  <p>₹ </p>
-                </div> */}
                 <div className='d-flex justify-content-between'>
                   <p className='fw-bold'>
                     Total ({{ cartCountTotal } === 1 ? "item" : "items"}){" "}
