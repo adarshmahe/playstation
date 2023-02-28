@@ -77,7 +77,7 @@ function App() {
       <ToastContainer />
       <SonyHeader />
 
-      <RouterProvider router={router} />
+      <RouterProvider router={router} basename="/playstation" />
 
       <Footer />
     </div>
