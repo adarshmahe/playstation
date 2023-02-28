@@ -47,7 +47,7 @@ function App() {
       errorElement: <Error />,
       children: [
         {
-          path: "/playstation",
+          path: "/",
           element: <Home />,
         },
         {
