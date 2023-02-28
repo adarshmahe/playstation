@@ -1,5 +1,5 @@
 import "./App.css";
-import "react-toastify/dist/ReactToastify.css";
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from "./Components/Footer/Footer";
 import MainHeader from "./Components/MainHeader/MainHeader";
 import SonyHeader from "./Components/SonyHeader/SonyHeader";
@@ -40,7 +40,7 @@ function App() {
     }
   };
 
-  const router = createBrowserRouter({ basename: "/playstation" }, [
+  let router = createBrowserRouter([
     {
       path: "/",
       element: <MainHeader cartItems={cartItems} gameItems={gameItems} />,
@@ -70,7 +70,7 @@ function App() {
         },
       ],
     },
-  ]);
+  ], { basename: "/playstation" });
 
   return (
     <div className='App'>
