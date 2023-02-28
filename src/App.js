@@ -47,7 +47,7 @@ function App() {
       errorElement: <Error />,
       children: [
         {
-          path: "/",
+          path: "/playstation",
           element: <Home />,
         },
         {
@@ -70,7 +70,7 @@ function App() {
         },
       ],
     },
-  ], { basename: "/" });
+  ], { basename: "/base" });
 
   return (
     <div className='App'>
