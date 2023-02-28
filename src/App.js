@@ -70,7 +70,7 @@ function App() {
         },
       ],
     },
-  ], { basename: "/base" });
+  ], { basename: "/playstation" });
 
   return (
     <div className='App'>
